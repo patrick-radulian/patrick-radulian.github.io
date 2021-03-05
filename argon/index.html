@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Argon</title>
+    <title>Unity WebGL Player | Argon v2</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -22,19 +22,19 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Argon</div>
+        <div id="unity-build-title">Argon v2</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL Build.data",
-        frameworkUrl: buildUrl + "/WebGL Build.framework.js",
-        codeUrl: buildUrl + "/WebGL Build.wasm",
+        dataUrl: buildUrl + "/WebGL Build.data.gz",
+        frameworkUrl: buildUrl + "/WebGL Build.framework.js.gz",
+        codeUrl: buildUrl + "/WebGL Build.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Patrick Radulian",
-        productName: "Argon",
+        companyName: "DefaultCompany",
+        productName: "Argon v2",
         productVersion: "0.1",
       };
 
@@ -53,8 +53,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
 
